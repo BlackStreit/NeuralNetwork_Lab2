@@ -1,0 +1,27 @@
+﻿<Window x:Class="PatternRecognitionExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="420.112" Width="607.821">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="193*"/>
+            <ColumnDefinition Width="407*"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="BlueViolet" BorderThickness="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="173,68,173,67">
+            <Image x:Name="image1" Width="250" Height="250" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   Stretch="None" />
+        </Border>
+        <TextBox x:Name="statusTextBlock" Height="34" Margin="0,0,8,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Bottom" Grid.ColumnSpan="2" />
+        <Button Content="Очистить" HorizontalAlignment="Left" Height="42" Margin="285.531,56,0,0" VerticalAlignment="Top"
+                Width="121" Click="Button_Click_1" Grid.Column="1" />
+        <Button Content="Распознать" x:Name="recognizeButton" HorizontalAlignment="Left" Height="42"
+                Margin="285.531,98,0,0" VerticalAlignment="Top" Width="121" Click="ButtonBase_OnClick" Grid.Column="1" />
+        <Button Content="Сохранить" x:Name="saveButton" HorizontalAlignment="Left" Height="42" Margin="285.531,140,0,0"
+                VerticalAlignment="Top" Width="121" Click="SaveButton_OnClick" Grid.Column="1" />
+        <Button Content="Загрузить" x:Name="loadButton" HorizontalAlignment="Left" Height="42" Margin="285.531,182,0,0"
+                VerticalAlignment="Top" Width="121" Click="LoadButton_OnClick" Grid.Column="1" />
+        <Button Content="Обучить" x:Name="learnButton" HorizontalAlignment="Left" Height="42" Margin="285.531,14,0,0"
+                VerticalAlignment="Top" Width="121" Click="LearnButton_OnClick" Grid.Column="1" />
+    </Grid>
+</Window>

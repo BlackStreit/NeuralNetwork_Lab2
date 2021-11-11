@@ -13,6 +13,7 @@ namespace Lenium.NeuralNetwork
         private INeuron[] _neurons;
         private double[] _lastOutput;
 
+
         /// <summary>
         /// 
         /// </summary>
